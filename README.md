@@ -17,6 +17,7 @@ OpenClaude (hooks)
 
 - [OpenClaude](https://github.com/Gitlawb/openclaude) installed (`npm i -g @gitlawb/openclaude`)
 - [claude-mem](https://github.com/thedotmack/claude-mem) plugin installed and worker running on `localhost:37777`
+- **Claude Code must be running** to start the claude-mem worker automatically (the worker listens on `localhost:37777` and is required to save observations)
 - Node.js 18+
 
 ## Installation
