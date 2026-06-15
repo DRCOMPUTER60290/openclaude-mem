@@ -1,0 +1,14 @@
+{
+  "name": "claude-mem-openclaude-plugin",
+  "version": "1.0.0",
+  "description": "Plugin claude-mem pour OpenClaude — capture les discussions et les envoie au viewer localhost:37777",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.0",
+    "@grpc/proto-loader": "^0.7.0"
+  }
+}
