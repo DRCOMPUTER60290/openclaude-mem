@@ -2,6 +2,26 @@
 
 Capture [OpenClaude](https://github.com/Gitlawb/openclaude) conversations and tool usage in the [claude-mem](https://github.com/thedotmack/claude-mem) viewer at `http://localhost:37777/`.
 
+## The full stack — why use this?
+
+You might wonder: *why use OpenClaude if you already have Claude Code?*
+
+The answer is **free tokens**.
+
+```
+freellmapi  →  OpenClaude  →  openclaude-mem  →  claude-mem viewer
+(free tokens)  (coding agent)  (this skill)       (localhost:37777)
+```
+
+| Tool | Role |
+|------|------|
+| [freellmapi](https://github.com/tashfeenahmed/freellmapi) | Local API server that provides **free LLM tokens** via an OpenAI-compatible endpoint |
+| [OpenClaude](https://github.com/Gitlawb/openclaude) | A Claude Code alternative supporting **any LLM provider**, including freellmapi |
+| [openclaude-mem](https://github.com/DRCOMPUTER60290/openclaude-mem) | This skill — hooks into OpenClaude and forwards sessions to claude-mem |
+| [claude-mem](https://github.com/thedotmack/claude-mem) | Memory and viewer — both Claude Code and OpenClaude sessions appear at `localhost:37777` |
+
+This gives you a full AI coding setup at zero cost, with the same memory and observability as Claude Code.
+
 ## When to Use This Skill
 
 Use this skill when the user:
